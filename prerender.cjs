@@ -27,3 +27,9 @@ for(const [page,title] of Object.entries(pages)){
  fs.writeFileSync(path.join(root,page+'.html'),`<!doctype html>\n<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>${title} — Joshua Koppelman</title><meta name="description" content="Joshua Koppelman — restaurants, consumer brands, business, and a life of passion and challenge."><meta name="robots" content="noindex, nofollow"><meta name="theme-color" content="#153e73"><link rel="icon" href="assets/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="styles.css?v=${assetVersion}"><link rel="stylesheet" href="${fonts}" media="print" onload="this.media='all'"><script src="app.js?v=${assetVersion}" defer></script></head><body data-page="${page}"><div id="app">${html}</div></body></html>`);
  console.log('Rendered '+page+'.html');
 }
+
+// Commit this output so GitHub Pages can publish main /docs without credentials.
+const pagesRoot=path.join(__dirname,"docs");
+fs.mkdirSync(pagesRoot,{recursive:true});
+fs.cpSync(root,pagesRoot,{recursive:true});
+console.log("Updated docs/ for GitHub Pages");
