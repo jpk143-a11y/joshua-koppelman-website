@@ -8,7 +8,7 @@ Seven pages about restaurants, consumer brands, business, and life beyond a resu
 2. Edit copy in `content/site.json`, layouts in `src/app.js`, or design in `src/styles.css`.
 3. Add photos to `public/assets/`. Fill a placeholder through `photoSources` in `content/site.json`, for example `"kitchen": "assets/kitchen.jpg"`.
 4. Run `npm run check` and `npm run build`.
-5. Open a pull request. Review and merge to `main` to update the connected Vercel website at its existing address.
+5. Include the regenerated `docs/` output and open a pull request. Review and merge to `main` to update the connected Vercel website and GitHub Pages (once enabled) at their existing addresses.
 
 Vercel uses `npm run build` and publishes `dist/`. There are no package dependencies, environment variables, or database. Branch deployments are previews; `main` is production. A public Sites mirror provides an alternative address for visitors whose network cannot reach Vercel. Edits made in this conversation can be republished to the same mirror after merging.
 
@@ -49,3 +49,7 @@ Add `?edit=1` to an address to show **Customize draft**. These edits stay in tha
 ## Publishing notes
 
 The repository contains website source and approved website assets only. Private original uploads and authentication material are excluded. Generated `dist/`, local hosting identity, and provider credentials are ignored by Git. Draft pages have `noindex, nofollow` metadata until Joshua is ready for search indexing.
+
+## GitHub Pages: one-time setup
+
+Open repository Settings → Pages. Under Build and deployment choose **Deploy from a branch**, select **main** and **/docs**, and save. The generated `docs/` directory is committed alongside source changes. GitHub then publishes updates after each merge to `main`. The expected address is https://jpk143-a11y.github.io/joshua-koppelman-website/; it is not live until GitHub Pages is enabled and its first deployment completes.
