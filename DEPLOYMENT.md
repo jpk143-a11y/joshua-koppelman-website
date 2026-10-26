@@ -2,7 +2,7 @@
 
 Public website (independent of Vercel): https://joshua-koppelman.cloudygoat514.chatgpt.site/
 
-Vercel production: https://joshua-koppelman-website.vercel.app/
+Vercel production: https://joshua-koppelman-portfolio.vercel.app/
 
 Source: https://github.com/jpk143-a11y/joshua-koppelman-website
 
@@ -15,7 +15,7 @@ The public Sites mirror uses a separate native publishing workflow. When making 
 ## Existing resources to reuse
 
 - GitHub repository: `jpk143-a11y/joshua-koppelman-website`; production branch: `main`.
-- Vercel project: `prj_iu64BUxAB82sjPR9sIFYe22bcBjt`; team: `team_RBuk4xiyhDuLbFfmJjIpwSaG` (`joshisasquid`).
+- Active Vercel project (`joshua-koppelman-portfolio`): `prj_YnAImwYlr2TrGyerDaLWDw6Jjo07`; team: `team_RBuk4xiyhDuLbFfmJjIpwSaG` (`joshisasquid`).
 - Sites project: `appgprj_6adfd6511d24819196e960e32a283979`.
 - Current managed mirror checkout: `/workspace/sites/joshua-koppelman-public`.
 
